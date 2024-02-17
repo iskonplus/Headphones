@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper.header{
+    width: 100%;
+	background: url(./src/HeroArea.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    width: 1145px;
+    height: 600px;
+    border: 1px black solid;
+    margin: auto;
+}
