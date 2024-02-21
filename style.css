@@ -137,7 +137,7 @@ header {
     align-items: start;
 }
 
-.block_header:last-child{
+.block_header:last-child {
     padding-left: 25px;
     padding-top: 50px;
 }
@@ -166,7 +166,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.price{
+.price {
     margin-right: 30px;
 }
 
@@ -184,7 +184,7 @@ h3 {
     text-decoration-color: #ffffffba;
 }
 
-.button_white{
+.button_white {
     margin: 20px 0px;
     background-color: #FFFFFF;
     border: none;
@@ -198,31 +198,31 @@ h3 {
     transition: .5s;
 }
 
-.button_white:hover{
+.button_white:hover {
     background-color: #ffffffcc;
 }
 
 /* Our Latest colour collection 2021 */
 
-.colour_collection{
+.colour_collection {
     display: flex;
     margin: auto;
     justify-content: center;
     flex-direction: column;
 }
 
-.wraper_h2{
+.wraper_h2 {
     margin-top: 96px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 43px;
     line-height: 1.35;
     letter-spacing: 1px;
 }
 
-.wrapper_slider{
+.wrapper_slider {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,7 +230,7 @@ h2{
     margin-bottom: 80px;
 }
 
-.slider{
+.slider {
     width: 100%;
     display: flex;
     /* flex-wrap: nowrap; */
@@ -238,10 +238,10 @@ h2{
     padding: 0px 30px;
 }
 
-.slider_block{
+.slider_block {
     width: 33.33%;
     /* height: 300px; */
-      border-radius: 35px;
+    border-radius: 35px;
     box-shadow: 0px 0px 10px #00000034;
     cursor: pointer;
     transform: scale(.8);
@@ -251,7 +251,7 @@ h2{
     padding: 40px;
 }
 
-.slider_block.active{
+.slider_block.active {
     transform: scale(1.3);
     z-index: 3;
     box-shadow: 0px 0px 20px #00000034;
@@ -271,10 +271,11 @@ h2{
     cursor: pointer;
 }
 
-.arrow.left{
+.arrow.left {
     transform: rotate(-135deg);
 }
-.arrow.right{
+
+.arrow.right {
     transform: rotate(45deg);
 }
 
@@ -291,68 +292,72 @@ h2{
 .a {
     background-image: url(./src/handsfree-1.png);
 }
+
 .b {
     background-image: url(./src/handsfree-2.png);
 }
+
 .c {
     background-image: url(./src/handsfree-3.png);
 }
 
 /* Good headphones and loud music is all you need */
 
-.wrapper_good_head_phones{
+.wrapper_good_head_phones {
     display: flex;
     justify-content: space-between;
 }
 
-.good_head_phones_block:first-child{
+.good_head_phones_block:first-child {
     width: 45%;
     align-items: center;
 }
-.good_head_phones_block:last-child{
+
+.good_head_phones_block:last-child {
     width: 55%;
     align-items: center;
     padding-left: 25px;
 }
 
-.good_head_phones_block .wraper_h2{
+.good_head_phones_block .wraper_h2 {
     padding-right: 60px;
     text-align: start;
     margin-bottom: 60px;
 }
 
-.good_head_phones_content{
+.good_head_phones_content {
     display: flex;
     align-items: start;
     margin-bottom: 41px;
 }
 
-.good_head_phones_content img{
+.good_head_phones_content img {
     width: 19%;
     margin-right: 30px;
 }
+
 .wrapper_content {
-padding-top: 2px;
+    padding-top: 2px;
 }
 
-.wrapper_content h4{
-font-size: 30px;
-letter-spacing: 1px;
-margin-bottom: 8px;
+.wrapper_content h4 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
 }
 
-.wrapper_content p{
-font-weight: 500;
-margin-bottom: 11px;
+.wrapper_content p {
+    font-weight: 500;
+    margin-bottom: 11px;
 }
 
-.wrapper_content a{
-color: #FF4241;
-font-weight: 600;
-text-decoration: none;
+.wrapper_content a {
+    color: #FF4241;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.good_head_phones_block_img{
+.good_head_phones_block_img {
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -364,51 +369,51 @@ text-decoration: none;
 
 /* Our Latest Product */
 
-.our_latest_product{
+.our_latest_product {
     text-align: center;
     margin-top: 88px;
 }
 
-.our_latest_product h2{
+.our_latest_product h2 {
     margin-bottom: 12px;
 }
 
-.wrapper_block_our_latest_product_cards{
+.wrapper_block_our_latest_product_cards {
     display: flex;
     flex-wrap: nowrap;
     margin-top: 40px;
 }
 
-.wrapper_card{
+.wrapper_card {
     width: 33.33%;
     padding: 60px 30px 20px 15px;
 }
 
-.card{
+.card {
     height: 328px;
     border-radius: 30px;
     position: relative;
 }
 
-.card.pink{
+.card.pink {
     background-color: #FFE5EE;
 }
 
-.card.blue{
+.card.blue {
     background-color: #E5F1FF;
 }
 
-.card.green{
+.card.green {
     background-color: #E5FFFB;
 }
 
-.card>img{
+.card>img {
     position: absolute;
     left: 10px;
     bottom: 20px;
 }
 
-.basket{
+.basket {
     width: 80px;
     height: 80px;
     border: 4px solid #ffffff;
@@ -425,34 +430,34 @@ text-decoration: none;
     scale: 1
 }
 
-.basket:hover{
+.basket:hover {
     scale: 1.1;
 }
 
-.pink .basket{
+.pink .basket {
     background-color: #FFE5EE;
 }
 
-.blue .basket{
+.blue .basket {
     background-color: #E5F1FF;
 }
 
-.green .basket{
+.green .basket {
     background-color: #E5FFFB;
 }
 
-.basket>img{
+.basket>img {
     width: 100%;
 }
 
-.wrapper_rating{
+.wrapper_rating {
     display: flex;
     justify-content: space-between;
     margin-top: 35px;
     align-items: center;
 }
 
-.stars{
+.stars {
     width: 55%;
     padding-top: 10%;
     background-size: contain;
@@ -461,22 +466,149 @@ text-decoration: none;
     background-image: url(./src/stars.png);
     align-items: center;
 }
-.rating{
+
+.rating {
     font-weight: 600;
 }
 
-.wrapper_price_headphone{
+.wrapper_price_headphone {
     display: flex;
     justify-content: space-between;
     margin-top: 16px;
 }
 
 .headphone_colour,
-.headphone_colour_price{
+.headphone_colour_price {
     font-size: 22px;
     font-weight: 600;
 }
 
+/* Whatever you get in the box */
+
+.whatever{
+    display: flex;
+    margin-top: 112px;
+}
+
+.whatever_block:first-child{
+    width: 60%;
+}
+
+.whatever_block:last-child{
+    width: 40%;
+    padding-right: 60px;
+    padding-top: 70px;
+}
+
+.whatever_block h2{
+    margin-bottom: 15px;
+}
+
+.wrapper_list_info_whatever{
+display: flex;
+/* margin-bottom: 15px; */
+margin-right: 105px;
+border-bottom: 1px solid #1E1E1E;
+padding: 25px 0px 22px 20px;
+align-items: center;
+cursor: pointer;
+transition: .5s;
+}
+
+.wrapper_list_info_whatever:hover{
+background-color: #00000011;
+}
+
+.wrapper_list_info_whatever p{
+    font-size: 20px;
+font-weight: 600;
+letter-spacing: 1px;
+}
+
+.around{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #1E1E1E;
+    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrow_whatever{
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #1E1E1E;
+    border-right: 2px solid #1E1E1E;
+    transform: rotate(45deg);
+}
+
+.line{
+    width: 8px;
+    height: 2px;
+    background-color: #1E1E1E;
+    position: absolute;
+    
+}
+
+/* subscribe */
+
+.subscribe{
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./src/freepik--background-complete--inject-3.png);
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.wrapper_form{
+    background-color: #FFF4F4;
+    display: flex;
+    flex-direction: column;
+    padding: 53px 110px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.wrapper_form h2{
+    margin-bottom: 7px;
+}
+
+form{
+    margin-top: 40px;
+    padding: 0;
+    border-radius: 40px;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#email{
+    border:none;
+    padding: 18px 30px;
+    border-radius: 40px;
+    margin-right: 60px;
+    font-size: 18px;
+}
+
+.button_submit{
+    border-radius: 40px;
+    border: none;
+    background-color: #FF4948;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    font-size: 22px;transition: .5s;
+}
+
+.button_submit:hover{
+    background-color: #cc3939;
+}
 
 
 
