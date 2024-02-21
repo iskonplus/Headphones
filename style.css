@@ -362,6 +362,125 @@ text-decoration: none;
     margin-top: 25px;
 }
 
+/* Our Latest Product */
+
+.our_latest_product{
+    text-align: center;
+    margin-top: 88px;
+}
+
+.our_latest_product h2{
+    margin-bottom: 12px;
+}
+
+.wrapper_block_our_latest_product_cards{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+
+.wrapper_card{
+    width: 33.33%;
+    padding: 60px 30px 20px 15px;
+}
+
+.card{
+    height: 328px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.card.pink{
+    background-color: #FFE5EE;
+}
+
+.card.blue{
+    background-color: #E5F1FF;
+}
+
+.card.green{
+    background-color: #E5FFFB;
+}
+
+.card>img{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+.basket{
+    width: 80px;
+    height: 80px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    scale: 1
+}
+
+.basket:hover{
+    scale: 1.1;
+}
+
+.pink .basket{
+    background-color: #FFE5EE;
+}
+
+.blue .basket{
+    background-color: #E5F1FF;
+}
+
+.green .basket{
+    background-color: #E5FFFB;
+}
+
+.basket>img{
+    width: 100%;
+}
+
+.wrapper_rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.stars{
+    width: 55%;
+    padding-top: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: start;
+    background-image: url(./src/stars.png);
+    align-items: center;
+}
+.rating{
+    font-weight: 600;
+}
+
+.wrapper_price_headphone{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.headphone_colour,
+.headphone_colour_price{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+
+
+
 
 @media (max-width: 1150px) {
 
