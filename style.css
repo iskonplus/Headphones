@@ -7,6 +7,9 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 .wrapper.header {
     width: 100%;
@@ -18,8 +21,6 @@
 
 .container {
     width: 1145px;
-    /* height: 600px; */
-    /* border: 1px black solid; */
     margin: auto;
     padding: 36px 0px;
 }
@@ -102,6 +103,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
+    display: none;
 }
 
 .button_nav {
@@ -593,6 +595,15 @@ form{
     border-radius: 40px;
     margin-right: 60px;
     font-size: 18px;
+    outline:none;
+    background-color: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .button_submit{
@@ -609,6 +620,97 @@ form{
 .button_submit:hover{
     background-color: #cc3939;
 }
+
+footer{
+    background-color: #E86564;
+    margin-top: 98px;
+}
+
+.container.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+    flex-wrap: nowrap;
+}
+
+.block{
+    width: 33.33%;
+    display: flex;
+    justify-content: start;
+}
+
+.wrapper_nav_footer.block{
+    justify-content: center;
+}
+
+.wrapper_social.block{
+    justify-content: end;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 20px;
+    color:#ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+li a:hover{
+    color:#ffffffb6;
+}
+
+.soc{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 35px;
+    scale: 1;
+    transition: .5s;
+    
+}
+
+.soc:hover{
+    scale: 1.2;
+}
+
+.soc.face{
+    margin-right: 0px;
+}
+
+.soc_logo{
+    width: 100%;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.insta .soc_logo{
+    background-image: url(./src/insta.png); 
+}
+
+.twit .soc_logo{
+    background-image: url(./src/twit.png); 
+}
+
+.face .soc_logo{
+    background-image: url(./src/face.png); 
+}
+
 
 
 
