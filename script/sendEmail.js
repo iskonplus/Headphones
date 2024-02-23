@@ -1,4 +1,4 @@
-import { getMessage } from "./getMessage.js";
+import { getMessage } from "./script/getMessage.js";
 
 export function sendEmail(btnSubmit, inputEmail, e) {
     e.preventDefault();
