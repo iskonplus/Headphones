@@ -588,6 +588,12 @@ form {
     border-radius: 40px;
     display: flex;
     background-color: #ffffff;
+    border: 2px solid #ff484800;
+    transition: .5s;
+}
+
+form.active{
+    border: 2px solid #FF4948;
 }
 
 #email {
@@ -607,7 +613,7 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.button_submit {
+.button_submit{
     border-radius: 40px;
     border: none;
     background-color: #FF4948;
@@ -622,6 +628,13 @@ input:-webkit-autofill:active {
 .button_submit:hover {
     background-color: #cc3939;
 }
+
+.button_submit:disabled, .button_submit:hover:disabled {
+    background-color: rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: #000000;
+    cursor: not-allowed;
+    }
 
 footer {
     background-color: #E86564;
@@ -712,9 +725,9 @@ li a:hover {
 }
 
 @media (max-width: 1175px) {
-    *:hover {
+    /* *:hover {
         pointer-events: none;
-    }
+    } */
 
     .container {
         width: 100%;
@@ -773,23 +786,38 @@ li a:hover {
         }
 
         .wrapper_menu_nav {
-            width: 100%;
+            width: 0%;
             height: 100vh;
             position: fixed;
             top: 0;
-            right: 0;
+            left: 100%;
             background-color: #0000003f;
             z-index: 4;
+            justify-content: flex-end;
+            /* display: none; */
+            transition: .5s;
             display: flex;
-            justify-content: end;
-            display: none;
+        }
+
+        .wrapper_menu_nav.active{
+            width: 100%;
+            left:0;
         }
 
         .wrapper_menu_nav ul {
-            display: none;
+            height: 100vh;
+            position: fixed;
+            display: flex;
             flex-direction: column;
             background-color: #000000b6;
             padding: 60px 100px 60px 40px;
+            transition: .5s;
+            top:0;
+            right:-100%;
+        }
+        
+        .wrapper_menu_nav ul.active {
+                right:0;
         }
 
         .wrapper_menu_nav ul li {
