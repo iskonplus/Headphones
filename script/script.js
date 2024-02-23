@@ -13,6 +13,7 @@ const btnBuy = document.querySelector(".button_white");
 const btnSubmit = document.querySelector(".button_submit");
 const inputEmail = document.getElementById("email");
 
+
 btnNav.addEventListener("click", () =>
   toggleClassActive(backgroundMenu, ulMenu)
 );
