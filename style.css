@@ -592,7 +592,7 @@ form {
     transition: .5s;
 }
 
-form.active{
+form.active {
     border: 2px solid #FF4948;
 }
 
@@ -613,7 +613,7 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.button_submit{
+.button_submit {
     border-radius: 40px;
     border: none;
     background-color: #FF4948;
@@ -629,12 +629,13 @@ input:-webkit-autofill:active {
     background-color: #cc3939;
 }
 
-.button_submit:disabled, .button_submit:hover:disabled {
-    background-color: rgba(0,0,0,.1);
+.button_submit:disabled,
+.button_submit:hover:disabled {
+    background-color: rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
     color: #000000;
     cursor: not-allowed;
-    }
+}
 
 footer {
     background-color: #E86564;
@@ -725,12 +726,14 @@ li a:hover {
 }
 
 @media (max-width: 1175px) {
-    /* *:hover {
-        pointer-events: none;
-    } */
 
     .container {
         width: 100%;
+        padding: 0px 10px;
+    }
+
+    body {
+        position: relative;
     }
 
     @media (max-width: 1020px) {
@@ -794,17 +797,17 @@ li a:hover {
             background-color: #0000003f;
             z-index: 4;
             justify-content: flex-end;
-            /* display: none; */
             transition: .5s;
             display: flex;
         }
 
-        .wrapper_menu_nav.active{
+        .wrapper_menu_nav.active {
             width: 100%;
-            left:0;
+            left: 0;
         }
 
         .wrapper_menu_nav ul {
+            width: 320px;
             height: 100vh;
             position: fixed;
             display: flex;
@@ -812,12 +815,12 @@ li a:hover {
             background-color: #000000b6;
             padding: 60px 100px 60px 40px;
             transition: .5s;
-            top:0;
-            right:-100%;
+            top: 0;
+            right: -120%;
         }
-        
+
         .wrapper_menu_nav ul.active {
-                right:0;
+            right: 0;
         }
 
         .wrapper_menu_nav ul li {
@@ -827,15 +830,13 @@ li a:hover {
 
         nav {
             justify-content: center;
+            padding: 10px;
         }
 
         nav .naw_menue {
             margin-left: 100px;
         }
 
-        nav img {
-            margin-bottom: 30px;
-        }
 
         h1 {
             font-size: 65px;
@@ -857,7 +858,20 @@ li a:hover {
             margin: 0px 30px;
         }
 
+        .wrapper_form {
+            margin-bottom: 20px;
+        }
+
         @media (max-width: 725px) {
+
+            .button_submit:disabled,
+            .button_submit:hover:disabled {
+                border: none;
+            }
+
+            nav img {
+                margin-bottom: 30px;
+            }
 
             .subscribe {
                 margin-top: 60px;
@@ -951,8 +965,11 @@ li a:hover {
             }
 
             form {
+                /* border:none; */
+                height: 95px;
+                border-radius: 23px;
                 flex-direction: column;
-                background-color: #00000000;
+                overflow: hidden;
             }
 
             #email {
@@ -961,7 +978,7 @@ li a:hover {
                 border-radius: 40px;
                 margin-right: 0px;
                 font-size: 14px;
-                margin-bottom: 20px;
+                /* margin-bottom: 20px; */
             }
 
             .button_submit {
@@ -979,6 +996,13 @@ li a:hover {
 
             .wrapper_nav_footer.block {
                 display: none;
+            }
+
+
+            @media (max-width: 455px) {
+                .wrapper_menu_nav ul {
+                    width: 85%;
+                }
             }
 
         }
