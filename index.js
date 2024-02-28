@@ -24,7 +24,7 @@ firstPosition(sliderCards);
 arrows.forEach(arrow => {
   arrow.addEventListener("click", (e) => {
     let direction = e.target.classList[1];
-    clickProcessingWithInterwal(sliderCards, direction, arrow, 220);
+    clickProcessingWithInterwal(sliderCards, direction, arrow, 230);
   });
 });
 

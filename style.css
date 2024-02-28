@@ -241,7 +241,7 @@ h2 {
     padding: 0px 30px;
     flex-wrap: nowrap;
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .slider_block {
@@ -1030,9 +1030,6 @@ li a:hover {
                         width: 100%;
                     }
 
-                    .slider{
-                        height: auto;
-                    }
 
                     .wrapper_menu_nav {
                         background-color: #00000000;

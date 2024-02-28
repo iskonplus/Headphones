@@ -1,4 +1,5 @@
 import { toggleClassActive } from "./toggleClassActive.js";
+const slider = document.querySelector('.slider')
 let width;
 let lastMove = 0;
 
@@ -6,7 +7,10 @@ let lastMove = 0;
 function firstPosition(sliderCards) {
     let positionNow = 0;
 
+    
     sliderCards.forEach((card) => {
+        console.log(card.offsetHeight)
+        slider.style.height = `${card.offsetHeight}px`
         width = card.offsetWidth;
 
         card.style.left = `${positionNow}px`;
