@@ -1022,15 +1022,39 @@ li a:hover {
 
 
             .arrow {
-                /* width: 22px;
-                height: 22px; */
-                display: none;
+                width: 22px;
+                height: 22px;
             }
 
             @media (max-width:560px) {
                 .slider_block {
                     width: 100%;
                 }
+
+                .wrapper_slider{
+                    margin: 20px 0px;
+                }
+
+                .good_head_phones_block .wraper_h2 {
+                    margin-top: 0px;
+                }
+
+                .our_latest_product {
+                    margin-top: 20px;
+                }
+
+                .whatever{
+                margin-top: 20px;
+                }
+
+                .wraper_h2 {
+                    margin-top: 20px;
+                }
+
+                .wrapper_block_our_latest_product_cards {
+                    margin-top: 20px;
+                }
+                
 
 
                 @media (max-width: 455px) {

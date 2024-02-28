@@ -7,7 +7,7 @@ let lastMove = 0;
 function firstPosition(sliderCards) {
     let positionNow = 0;
 
-    
+
     sliderCards.forEach((card) => {
 
         slider.style.height = `${card.offsetHeight}px`
@@ -48,14 +48,14 @@ function slideRecursion(sliderCards, direction) {
 
 function clickProcessingWithInterwal(sliderCards, direction, arrow, ms) {
     if (Date.now() - lastMove > ms) {
-        arrow !== null && toggleClassActive(arrow);
-        arrow !== null && setTimeout(() => toggleClassActive(arrow), 200);
-  
-      slideRecursion(sliderCards, direction);
-      setTimeout(() => changePosition(sliderCards, direction), 200);
-      lastMove = Date.now();
+        toggleClassActive(arrow);
+        setTimeout(() => toggleClassActive(arrow), 200);
+
+        slideRecursion(sliderCards, direction);
+        setTimeout(() => changePosition(sliderCards, direction), 200);
+        lastMove = Date.now();
     }
-  }
+}
 
 
 function directionMove(direction, cardPosition) {

@@ -15,12 +15,8 @@ const sliderCards = document.querySelectorAll(".slider_block");
 const btnBuy = document.querySelector(".button_white");
 const btnSubmit = document.querySelector(".button_submit");
 const inputEmail = document.getElementById("email");
-const slider = document.querySelector('.wrapper_slider');
-let startSwipe;
-let endSwipe;
 
 window.addEventListener('resize', ()=>firstPosition(sliderCards));
-
 
 firstPosition(sliderCards);
 
@@ -30,30 +26,6 @@ arrows.forEach(arrow => {
     clickProcessingWithInterwal(sliderCards, direction, arrow, 230);
   });
 });
-
-slider.addEventListener("touchmove", (e) => startSwipe = e.touches.item(0).clientX);
-
-slider.addEventListener("touchend", (e) => {
-  endSwipe = e.changedTouches.item(0).clientX;
-
-  if(endSwipe > startSwipe){
-    //a left -> right swipe
-    console.log('right swipe')
-    clickProcessingWithInterwal(sliderCards, 'left', null, 0);
-  }
-  if(endSwipe < startSwipe ){
-    //a right -> left swipe
-    console.log('left swipe')
-    clickProcessingWithInterwal(sliderCards, 'right', null, 0);
-   }
-
-});
-
-
-
-
-
-
 
 btnNav.addEventListener("click", () =>
   toggleClassActive(backgroundMenu, ulMenu)
