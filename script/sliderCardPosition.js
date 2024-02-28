@@ -9,7 +9,7 @@ function firstPosition(sliderCards) {
 
     
     sliderCards.forEach((card) => {
-        console.log(card.offsetHeight)
+
         slider.style.height = `${card.offsetHeight}px`
         width = card.offsetWidth;
 
@@ -48,8 +48,8 @@ function slideRecursion(sliderCards, direction) {
 
 function clickProcessingWithInterwal(sliderCards, direction, arrow, ms) {
     if (Date.now() - lastMove > ms) {
-      toggleClassActive(arrow);
-      setTimeout(() => toggleClassActive(arrow), 200);
+        arrow !== null && toggleClassActive(arrow);
+        arrow !== null && setTimeout(() => toggleClassActive(arrow), 200);
   
       slideRecursion(sliderCards, direction);
       setTimeout(() => changePosition(sliderCards, direction), 200);
