@@ -2,7 +2,7 @@ const regEmail =
   /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
 
 export function checkEmail(inputEmail, btnSubmit, form) {
-  if (regEmail.test(inputEmail.value)) {
+  if (regEmail.test(inputEmail.value.toLowerCase())) {
     btnSubmit.disabled = false;
     form.classList.remove("active");
   } else if (inputEmail.value.length === 0) {
